@@ -22,13 +22,16 @@
           <h1 class="text-lg font-semibold tracking-tight">Sistema de Taller — Módulos</h1>
         </div>
         <div class="hidden sm:flex items-center gap-3">
+          <a href="#principal" class="rounded-xl px-4 py-2 bg-white/5 hover:bg-white/10 transition">Home</a>
+
           <a href="#modulos" class="rounded-xl px-4 py-2 bg-white/5 hover:bg-white/10 transition">Ver módulos</a>
+          <a href="#Alumnos" class="rounded-xl px-4 py-2 bg-white/5 hover:bg-white/10 transition">Alumnos</a>
         </div>
       </nav>
     </header>
 
     <!-- HERO -->
-    <section class="relative">
+    <section id="principal" class="relative">
       <img src="https://sic.cultura.gob.mx/images/62464" alt="Estación de trabajo tecnológica" class="absolute inset-0 h-full w-full object-cover opacity-15" />
       <div class="relative mx-auto max-w-7xl px-4 py-16 sm:py-24">
         <div class="max-w-3xl">
@@ -51,7 +54,7 @@
           <div class="p-5 bg-gradient-to-b from-neutral-900/80 to-neutral-950/90">
             <div class="flex items-center justify-between">
               <h4 class="text-xl font-semibold">Órdenes de Servicio</h4>
-              <span class="text-xs bg-white/10 px-2 py-1 rounded-lg">Mixto</span>
+              <span class="text-xs bg-white/10 px-2 py-1 rounded-lg">Admin</span>
             </div>
             <p class="mt-2 text-neutral-300">Control del flujo de atención y reparación. (Click para ver detalle)</p>
           </div>
@@ -63,7 +66,7 @@
           <div class="p-5 bg-gradient-to-b from-neutral-900/80 to-neutral-950/90">
             <div class="flex items-center justify-between">
               <h4 class="text-xl font-semibold">Pagos & Facturación</h4>
-              <span class="text-xs bg-white/10 px-2 py-1 rounded-lg">Mixto</span>
+              <span class="text-xs bg-white/10 px-2 py-1 rounded-lg">Admin</span>
             </div>
             <p class="mt-2 text-neutral-300">Registrar y controlar cobros y facturas. (Click para ver detalle)</p>
           </div>
@@ -75,19 +78,19 @@
           <div class="p-5 bg-gradient-to-b from-neutral-900/80 to-neutral-950/90">
             <div class="flex items-center justify-between">
               <h4 class="text-xl font-semibold">Ventas</h4>
-              <span class="text-xs bg-white/10 px-2 py-1 rounded-lg">Mixto</span>
+              <span class="text-xs bg-white/10 px-2 py-1 rounded-lg">Admin</span>
             </div>
             <p class="mt-2 text-neutral-300">Control de ventas directas y por servicio. (Click para ver detalle)</p>
           </div>
         </a>
        
        <!-- base -->
-        <a href="base.html" class="shine relative rounded-2xl overflow-hidden border border-white/10 block hover:scale-[1.02] transition-transform">
+        <a href="/basededatos/base.html" class="shine relative rounded-2xl overflow-hidden border border-white/10 block hover:scale-[1.02] transition-transform">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTepWi2eahIkItBT9IVC9rQui8bus48DHfumw&s" alt="Ventas" class="h-40 w-full object-cover" />
           <div class="p-5 bg-gradient-to-b from-neutral-900/80 to-neutral-950/90">
             <div class="flex items-center justify-between">
               <h4 class="text-xl font-semibold">TABLAS RELACIONADAS ENTRE SI</h4>
-              <span class="text-xs bg-white/10 px-2 py-1 rounded-lg">Mixto</span>
+              <span class="text-xs bg-white/10 px-2 py-1 rounded-lg">Admin</span>
             </div>
             <p class="mt-2 text-neutral-300">TABLAS. (Click para ver detalle)</p>
           </div>
@@ -97,10 +100,53 @@
     </section>
     <footer class="border-t border-white/5 py-8">
       <div class="mx-auto max-w-7xl px-4 text-sm text-neutral-400">
-        BRYAN FUENTES PEREZ
-        9/04/2025
+      
+        
       </div>
     </footer>
+<section id = "Alumnos" class="container mx-auto p-8">
+  <h2 class="text-2xl font-bold text-center mb-6">Nuestros Compañeros</h2>
+  <div class="flex flex-wrap justify-center gap-8">
+    
+    <!-- Compañero 1 -->
+    <div class="text-center">
+      <img src="img/m4.png" alt="Compañero 1" 
+           class="w-32 h-32 mx-auto object-cover border-4 border-blue-500 shadow-md">
+      <h3 class="mt-3 text-lg font-semibold">Bryan Fuentes Perez</h3>
+    </div>
+
+    <!-- Compañero 2 -->
+    <div class="text-center">
+      <img src="img/m2.jfif" alt="Compañero 2" 
+           class="w-32 h-32 mx-auto object-cover border-4 border-blue-500 shadow-md">
+      <h3 class="mt-3 text-lg font-semibold">Jose Manuel Ceron Cortes</h3>
+    </div>
+
+    <!-- Compañero 3 -->
+    <div class="text-center">
+      <img src="img/m3.png" alt="Compañero 3" 
+           class="w-32 h-32 mx-auto object-cover border-4 border-blue-500 shadow-md">
+      <h3 class="mt-3 text-lg font-semibold">Azucena Reyes Garcia</h3>
+    </div>
+
+    <!-- Compañero 4 -->
+    <div class="text-center">
+      <img src="img/m1.jfif" alt="Compañero 4" 
+           class="w-32 h-32 mx-auto object-cover border-4 border-blue-500 shadow-md">
+      <h3 class="mt-3 text-lg font-semibold">Sebastian Hernandez </h3>
+    </div>
+
+  </div>
+</section>
+ </div>
+    </section>
+    <footer class="border-t border-white/5 py-8">
+      <div class="mx-auto max-w-7xl px-4 text-sm text-neutral-400">
+        BRYAN FUENTES PEREZ
+        18/09/2025
+        ITSOEH
+        
+      </div>
 
     <!-- JS búsqueda -->
     <script>
