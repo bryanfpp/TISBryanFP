@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Módulo — Pagos & Facturación</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-950 text-neutral-100">
+  <header class="p-4 bg-neutral-900 border-b border-white/10">
+    <h1 class="text-2xl font-bold">Pagos & Facturación</h1>
+    <a href="cua.html" class="text-sm text-fuchsia-400">← Volver a inicio</a>
+  </header>
+
+  <main class="max-w-4xl mx-auto p-6 space-y-6">
+    <section>
+      <h2 class="text-xl font-semibold">Objetivo</h2>
+      <p class="mt-2 text-neutral-300">
+        Registrar y gestionar los pagos de servicios y refacciones, mediante un sistema de control financiero,
+        para asegurar el seguimiento de ingresos, facturación y estados de pago dentro del negocio.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold">Usuarios del subsistema</h2>
+      <ul class="list-disc list-inside text-neutral-300">
+        <li>Cliente</li>
+        <li>Personal administrativo</li>
+        <li>Administrador</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold">Acciones por usuario</h2>
+
+      <h3 class="text-lg font-medium mt-4">Cliente</h3>
+      <ul class="list-disc list-inside text-neutral-300">
+        <li>Consultar su historial de pagos.</li>
+        <li>Recibir notificaciones de pagos pendientes o realizados.</li>
+      </ul>
+
+      <h3 class="text-lg font-medium mt-4">Personal administrativo</h3>
+      <ul class="list-disc list-inside text-neutral-300">
+        <li>Registrar pagos.</li>
+        <li>Actualizar estatus de pago.</li>
+        <li>Generar recibos y reportes.</li>
+      </ul>
+
+      <h3 class="text-lg font-medium mt-4">Administrador</h3>
+      <ul class="list-disc list-inside text-neutral-300">
+        <li>Registrar y borrar pagos.</li>
+        <li>Actualizar cualquier registro de pago.</li>
+        <li>Leer información completa del subsistema.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold">Campos</h2>
+      <ul class="list-disc list-inside text-neutral-300">
+        <li>Id_pago (PAY-YYYY-####)</li>
+        <li>Id_orden_servicio</li>
+        <li>Id_cliente</li>
+        <li>fecha_pago</li>
+        <li>método_pago (efectivo/tarjeta/transferencia/mixto)</li>
+        <li>subtotal</li>
+        <li>descuento</li>
+        <li>total* (calculado automáticamente)</li>
+        <li>estatus_pago (pendiente/pagado/cancelado)</li>
+        <li>id_personal</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold">Diseño de la base de datos del subsistema</h2>
+      <a href="/basededatos/base_pagos.html" class="text-fuchsia-400 hover:underline">Base de Datos del subsistema</a>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold">Formulario</h2>
+      <a href="/formulario/pagos.html" class="text-fuchsia-400 hover:underline">Formulario</a>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold">Responsable del subsistema</h2>
+      <ul class="list-disc list-inside text-neutral-300">
+        <li>BRYAN FUENTES PEREZ] (230110581@itsoeh.edu.mx)</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

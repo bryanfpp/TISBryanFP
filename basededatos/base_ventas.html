@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Base de Datos — Ventas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-950 text-neutral-100 p-8">
+
+  <h1 class="text-2xl font-bold mb-4">Tabla Ventas</h1>
+
+  <h2 class="text-xl font-semibold mt-4">Propósito</h2>
+  <p class="mt-2 mb-4">
+    La tabla Ventas registra todas las transacciones de servicios y refacciones del taller,
+    permitiendo asociarlas con clientes, personal, pagos y diagnósticos. Facilita el control de ingresos
+    y la generación de reportes de ventas.
+  </p>
+
+  <h2 class="text-xl font-semibold mt-4">Campos</h2>
+  <table class="table-auto border border-white/20 w-full text-left mb-8">
+    <thead>
+      <tr class="bg-neutral-900">
+        <th class="border border-white/20 px-4 py-2">Campo</th>
+        <th class="border border-white/20 px-4 py-2">Tipo de dato</th>
+        <th class="border border-white/20 px-4 py-2">Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Id_venta</td><td>VARCHAR(15) PRIMARY KEY</td><td>Identificador único de la venta</td></tr>
+      <tr><td>fecha_venta</td><td>DATETIME</td><td>Fecha de realización de la venta</td></tr>
+      <tr><td>id_cliente</td><td>INT</td><td>Referencia al cliente</td></tr>
+      <tr><td>id_personal</td><td>INT</td><td>Empleado que registró la venta</td></tr>
+      <tr><td>descripcion_venta</td><td>NVARCHAR(255)</td><td>Descripción del servicio o refacción vendida</td></tr>
+      <tr><td>cantidad</td><td>INT</td><td>Cantidad de ítems vendidos</td></tr>
+      <tr><td>total</td><td>DECIMAL(10,2)</td><td>Monto total de la venta</td></tr>
+      <tr><td>id_pago</td><td>VARCHAR(15)</td><td>Referencia al pago asociado</td></tr>
+      <tr><td>id_diagnostico</td><td>INT</td><td>Referencia al diagnóstico si aplica</td></tr>
+      <tr><td>tipo</td><td>NVARCHAR(20)</td><td>Tipo de venta: servicio o refacción</td></tr>
+    </tbody>
+  </table>
+  <img src="/img/ventas.png" alt="Logo del taller" width="300" height="200">
+
+
+  <h2 class="text-xl font-semibold mt-4">Código SQL (MySQL)</h2>
+  <pre class="bg-neutral-900 p-4 rounded-lg overflow-x-auto text-sm">
+CREATE TABLE Ventas (
+  Id_venta VARCHAR(15) PRIMARY KEY,
+  fecha_venta DATETIME NOT NULL,
+  id_cliente INT NOT NULL,
+  id_personal INT,
+  descripcion_venta NVARCHAR(255),
+  cantidad INT,
+  total DECIMAL(10,2),
+  id_pago VARCHAR(15),
+  id_diagnostico INT,
+  tipo NVARCHAR(20)
+);
+  </pre>
+</body>
+</html>

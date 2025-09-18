@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Módulos</title>
+    <meta name="description" content="Página de presentación de módulos principales (Órdenes de Servicio, Pagos & Facturación y Ventas)." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .glass { background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,.06); }
+      .shine { position: relative; overflow: hidden; }
+      .shine::after { content: ""; position: absolute; inset: -200% -200%; background: conic-gradient(from 180deg at 50% 50%, transparent 0deg, rgba(255,255,255,.06) 60deg, transparent 120deg); animation: spin 6s linear infinite; }
+      @keyframes spin { to { transform: rotate(1turn); } }
+    </style>
+  </head>
+  <body class="bg-neutral-950 text-neutral-100 selection:bg-fuchsia-500/30">
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 border-b border-white/5 bg-neutral-950/70 backdrop-blur">
+      <nav class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-fuchsia-500 to-violet-600 shadow-lg shadow-fuchsia-500/30 text-xl">💻</span>
+          <h1 class="text-lg font-semibold tracking-tight">Sistema de Taller — Módulos</h1>
+        </div>
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="#modulos" class="rounded-xl px-4 py-2 bg-white/5 hover:bg-white/10 transition">Ver módulos</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="relative">
+      <img src="https://sic.cultura.gob.mx/images/62464" alt="Estación de trabajo tecnológica" class="absolute inset-0 h-full w-full object-cover opacity-15" />
+      <div class="relative mx-auto max-w-7xl px-4 py-16 sm:py-24">
+        <div class="max-w-3xl">
+          <h2 class="text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">
+            Acceso a los <span class="bg-gradient-to-br from-fuchsia-400 to-violet-400 bg-clip-text text-transparent">módulos principales</span>
+          </h2>
+          <p class="mt-4 text-neutral-300 text-lg">Solo disponibles: Órdenes de Servicio, Pagos & Facturación y Ventas. Haz clic para ver el detalle de cada uno.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÓDULOS -->
+    <section id="modulos" class="mx-auto max-w-7xl px-4 py-8">
+      <h3 class="text-2xl font-bold mb-6">Módulos habilitados</h3>
+
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6" id="cards">
+        <!-- Órdenes de Servicio -->
+        <a href="ordenes-servicio.html" class="shine relative rounded-2xl overflow-hidden border border-white/10 block hover:scale-[1.02] transition-transform">
+          <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop" alt="Órdenes de servicio" class="h-40 w-full object-cover" />
+          <div class="p-5 bg-gradient-to-b from-neutral-900/80 to-neutral-950/90">
+            <div class="flex items-center justify-between">
+              <h4 class="text-xl font-semibold">Órdenes de Servicio</h4>
+              <span class="text-xs bg-white/10 px-2 py-1 rounded-lg">Mixto</span>
+            </div>
+            <p class="mt-2 text-neutral-300">Control del flujo de atención y reparación. (Click para ver detalle)</p>
+          </div>
+        </a>
+
+        <!-- Pagos & Facturación -->
+        <a href="pagos-facturacion.html" class="shine relative rounded-2xl overflow-hidden border border-white/10 block hover:scale-[1.02] transition-transform">
+          <img src="https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=1600&auto=format&fit=crop" alt="Pagos y facturación" class="h-40 w-full object-cover" />
+          <div class="p-5 bg-gradient-to-b from-neutral-900/80 to-neutral-950/90">
+            <div class="flex items-center justify-between">
+              <h4 class="text-xl font-semibold">Pagos & Facturación</h4>
+              <span class="text-xs bg-white/10 px-2 py-1 rounded-lg">Mixto</span>
+            </div>
+            <p class="mt-2 text-neutral-300">Registrar y controlar cobros y facturas. (Click para ver detalle)</p>
+          </div>
+        </a>
+
+        <!-- Ventas -->
+        <a href="ventas.html" class="shine relative rounded-2xl overflow-hidden border border-white/10 block hover:scale-[1.02] transition-transform">
+          <img src="https://spacioss.com.mx/wp-content/uploads/2021/09/mejor-cierre-ventas-sistema-erp-1.png" alt="Ventas" class="h-40 w-full object-cover" />
+          <div class="p-5 bg-gradient-to-b from-neutral-900/80 to-neutral-950/90">
+            <div class="flex items-center justify-between">
+              <h4 class="text-xl font-semibold">Ventas</h4>
+              <span class="text-xs bg-white/10 px-2 py-1 rounded-lg">Mixto</span>
+            </div>
+            <p class="mt-2 text-neutral-300">Control de ventas directas y por servicio. (Click para ver detalle)</p>
+          </div>
+        </a>
+       
+       <!-- base -->
+        <a href="base.html" class="shine relative rounded-2xl overflow-hidden border border-white/10 block hover:scale-[1.02] transition-transform">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTepWi2eahIkItBT9IVC9rQui8bus48DHfumw&s" alt="Ventas" class="h-40 w-full object-cover" />
+          <div class="p-5 bg-gradient-to-b from-neutral-900/80 to-neutral-950/90">
+            <div class="flex items-center justify-between">
+              <h4 class="text-xl font-semibold">TABLAS RELACIONADAS ENTRE SI</h4>
+              <span class="text-xs bg-white/10 px-2 py-1 rounded-lg">Mixto</span>
+            </div>
+            <p class="mt-2 text-neutral-300">TABLAS. (Click para ver detalle)</p>
+          </div>
+        </a>
+     
+      </div>
+    </section>
+    <footer class="border-t border-white/5 py-8">
+      <div class="mx-auto max-w-7xl px-4 text-sm text-neutral-400">
+        BRYAN FUENTES PEREZ
+        9/04/2025
+      </div>
+    </footer>
+
+    <!-- JS búsqueda -->
+    <script>
+      const search = document.getElementById('search');
+      if(search){
+        const clearBtn = document.getElementById('clear');
+        const cards = Array.from(document.querySelectorAll('#cards a'));
+        const countEl = document.getElementById('count');
+        function normalize(t){ return (t||'').toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu,''); }
+        function filter(){
+          const q = normalize(search.value);
+          let hits = 0;
+          cards.forEach(card => {
+            const text = normalize(card.innerText);
+            const show = !q || text.includes(q);
+            card.style.display = show ? '' : 'none';
+            if (show) hits++;
+          });
+          countEl.textContent = hits;
+        }
+        search.addEventListener('input', filter);
+        clearBtn.addEventListener('click', () => { search.value=''; filter(); search.focus(); });
+        filter();
+      }
+    </script>
+  </body>
+</html>

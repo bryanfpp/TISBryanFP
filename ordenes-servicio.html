@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Módulo — Órdenes de Servicio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-950 text-neutral-100">
+  <header class="p-4 bg-neutral-900 border-b border-white/10">
+    <h1 class="text-2xl font-bold">Órdenes de Servicio</h1>
+    <a href="cua.html" class="text-sm text-fuchsia-400">← Volver a inicio</a>
+  </header>
+
+  <main class="max-w-4xl mx-auto p-6 space-y-6">
+    <section>
+      <h2 class="text-xl font-semibold">Objetivo</h2>
+      <p class="mt-2 text-neutral-300">
+        Registrar y controlar las órdenes de servicio, a través de un flujo estandarizado de estados y prioridades,
+        para dar seguimiento completo a las reparaciones realizadas en el taller.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold">Usuarios del subsistema</h2>
+      <ul class="list-disc list-inside text-neutral-300">
+        <li>Cliente</li>
+        <li>Personal técnico</li>
+        <li>Administrador</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold">Requerimientos por usuario</h2>
+
+      <h3 class="text-lg font-medium mt-4">Requerimientos del Cliente</h3>
+      <ul class="list-disc list-inside text-neutral-300">
+        <li>Consultar el estado de su orden de servicio.</li>
+        <li>Recibir notificaciones de cambios en el estatus.</li>
+        <li>Visualizar fecha estimada de entrega.</li>
+      </ul>
+
+      <h3 class="text-lg font-medium mt-4">Requerimientos del Personal Técnico</h3>
+      <ul class="list-disc list-inside text-neutral-300">
+        <li>Registrar diagnósticos de equipos.</li>
+        <li>Actualizar estatus de la orden.</li>
+        <li>Registrar accesorios recibidos y estado físico inicial.</li>
+      </ul>
+
+      <h3 class="text-lg font-medium mt-4">Requerimientos del Administrador</h3>
+      <ul class="list-disc list-inside text-neutral-300">
+        <li>Registrar nuevas órdenes de servicio.</li>
+        <li>Leer información de órdenes activas e históricas.</li>
+        <li>Actualizar datos de la orden.</li>
+        <li>Borrar órdenes de servicio (*solo administrador).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold">Campos</h2>
+      <ul class="list-disc list-inside text-neutral-300">
+        <li>Id_orden_servicio (OS-YYYY-####)</li>
+        <li>Id_cliente</li>
+        <li>Id_equipo</li>
+        <li>fecha_recepción</li>
+        <li>accesorios_recibidos</li>
+        <li>estado_físico_inicial</li>
+        <li>prioridad (baja/media/alta)</li>
+        <li>estatus (recibida/espera_refacción/en_reparación/lista/entregada/cancelada)</li>
+        <li>fecha_estimada_entrega</li>
+        <li>Id_diagnostico</li>
+        <li>garantía_aplica (bool)</li>
+        <li>Id_garantía</li>
+        <li>anticipo</li>
+        <li>saldo*</li>
+        <li>id_personal</li>
+        <li>notas</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold">Diseño de la base de datos del subsistema</h2>
+      <a href="/basededatos/base_ordenes.html" class="text-fuchsia-400 hover:underline">Base de Datos del subsistema</a>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold">Formulario</h2>
+      <a href="/formulario/ordenes.html" class="text-fuchsia-400 hover:underline">Formulario</a>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold">Responsable del subsistema</h2>
+      <ul class="list-disc list-inside text-neutral-300">
+        <li>BRYAN FUENTES PEREZ] (230110581@itsoeh.edu.mx)</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
