@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Formulario — Pagos & Facturación</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-950 text-neutral-100 min-h-screen flex flex-col items-center justify-center">
+
+  <header class="w-full p-4 bg-neutral-900 border-b border-white/10 mb-6">
+    <h1 class="text-2xl font-bold text-center">Formulario — Pagos & Facturación</h1>
+    <div class="text-center mt-2">
+      <a href="/pagos-facturacion.html" class="text-sm text-fuchsia-400 hover:underline">← Volver a Pagos & Facturación</a>
+    </div>
+  </header>
+
+  <main class="w-full max-w-xl p-6 bg-neutral-900 rounded-2xl shadow-lg">
+    <form class="space-y-4">
+      <div>
+        <label class="block text-neutral-300 font-medium mb-1" for="id_pago">ID Pago</label>
+        <input class="w-full p-2 rounded-lg bg-neutral-800 text-neutral-100 border border-white/20" type="text" id="id_pago" placeholder="PAY-2025-0001">
+      </div>
+
+      <div>
+        <label class="block text-neutral-300 font-medium mb-1" for="id_cliente">ID Cliente</label>
+        <input class="w-full p-2 rounded-lg bg-neutral-800 text-neutral-100 border border-white/20" type="text" id="id_cliente" placeholder="CLI-0001">
+      </div>
+
+      <div>
+        <label class="block text-neutral-300 font-medium mb-1" for="fecha_pago">Fecha de Pago</label>
+        <input class="w-full p-2 rounded-lg bg-neutral-800 text-neutral-100 border border-white/20" type="date" id="fecha_pago">
+      </div>
+
+      <div>
+        <label class="block text-neutral-300 font-medium mb-1" for="metodo_pago">Método de Pago</label>
+        <select class="w-full p-2 rounded-lg bg-neutral-800 text-neutral-100 border border-white/20" id="metodo_pago">
+          <option value="">Selecciona un método</option>
+          <option value="efectivo">Efectivo</option>
+          <option value="tarjeta">Tarjeta</option>
+          <option value="transferencia">Transferencia</option>
+          <option value="mixto">Mixto</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-neutral-300 font-medium mb-1" for="total">Total</label>
+        <input class="w-full p-2 rounded-lg bg-neutral-800 text-neutral-100 border border-white/20" type="number" id="total" placeholder="0.00">
+      </div>
+
+      <div class="flex justify-between items-center">
+        <button class="bg-fuchsia-400 text-neutral-950 px-6 py-2 rounded-lg font-semibold hover:bg-fuchsia-500 transition" type="submit">
+          Guardar
+        </button>
+        <button class="bg-neutral-700 text-neutral-100 px-6 py-2 rounded-lg font-semibold hover:bg-neutral-600 transition" type="reset">
+          Limpiar
+        </button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

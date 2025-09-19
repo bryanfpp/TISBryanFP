@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Formulario — Órdenes de Servicio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-950 text-neutral-100 min-h-screen flex flex-col items-center justify-center">
+
+  <header class="w-full p-4 bg-neutral-900 border-b border-white/10 mb-6">
+    <h1 class="text-2xl font-bold text-center">Formulario — Órdenes de Servicio</h1>
+    <div class="text-center mt-2">
+      <a href="/ordenes-servicio.html" class="text-sm text-fuchsia-400 hover:underline">← Volver a Órdenes de Servicio</a>
+    </div>
+  </header>
+
+  <main class="w-full max-w-2xl p-6 bg-neutral-900 rounded-2xl shadow-lg">
+    <form class="space-y-4">
+      
+      <div>
+        <label class="block text-neutral-300 font-medium mb-1" for="id_orden">ID Orden</label>
+        <input class="w-full p-2 rounded-lg bg-neutral-800 text-neutral-100 border border-white/20" type="text" id="id_orden" placeholder="OS-2025-0001">
+      </div>
+
+      <div>
+        <label class="block text-neutral-300 font-medium mb-1" for="id_cliente">ID Cliente</label>
+        <input class="w-full p-2 rounded-lg bg-neutral-800 text-neutral-100 border border-white/20" type="text" id="id_cliente" placeholder="CLI-0001">
+      </div>
+
+      <div>
+        <label class="block text-neutral-300 font-medium mb-1" for="id_equipo">ID Equipo</label>
+        <input class="w-full p-2 rounded-lg bg-neutral-800 text-neutral-100 border border-white/20" type="text" id="id_equipo" placeholder="EQ-0001">
+      </div>
+
+      <div>
+        <label class="block text-neutral-300 font-medium mb-1" for="fecha_recepcion">Fecha de Recepción</label>
+        <input class="w-full p-2 rounded-lg bg-neutral-800 text-neutral-100 border border-white/20" type="date" id="fecha_recepcion">
+      </div>
+
+      <div>
+        <label class="block text-neutral-300 font-medium mb-1" for="accesorios">Accesorios Recibidos</label>
+        <input class="w-full p-2 rounded-lg bg-neutral-800 text-neutral-100 border border-white/20" type="text" id="accesorios" placeholder="Cargador, Funda...">
+      </div>
+
+      <div>
+        <label class="block text-neutral-300 font-medium mb-1" for="estado_fisico">Estado Físico Inicial</label>
+        <input class="w-full p-2 rounded-lg bg-neutral-800 text-neutral-100 border border-white/20" type="text" id="estado_fisico" placeholder="Bueno / Dañado...">
+      </div>
+
+      <div>
+        <label class="block text-neutral-300 font-medium mb-1" for="prioridad">Prioridad</label>
+        <select class="w-full p-2 rounded-lg bg-neutral-800 text-neutral-100 border border-white/20" id="prioridad">
+          <option value="">Selecciona prioridad</option>
+          <option value="baja">Baja</option>
+          <option value="media">Media</option>
+          <option value="alta">Alta</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-neutral-300 font-medium mb-1" for="estatus">Estatus</label>
+        <select class="w-full p-2 rounded-lg bg-neutral-800 text-neutral-100 border border-white/20" id="estatus">
+          <option value="">Selecciona estatus</option>
+          <option value="recibida">Recibida</option>
+          <option value="espera_refaccion">Espera Refacción</option>
+          <option value="en_reparacion">En Reparación</option>
+          <option value="lista">Lista</option>
+          <option value="entregada">Entregada</option>
+          <option value="cancelada">Cancelada</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-neutral-300 font-medium mb-1" for="fecha_entrega">Fecha Estimada de Entrega</label>
+        <input class="w-full p-2 rounded-lg bg-neutral-800 text-neutral-100 border border-white/20" type="date" id="fecha_entrega">
+      </div>
+
+      <div>
+        <label class="block text-neutral-300 font-medium mb-1" for="notas">Notas</label>
+        <textarea class="w-full p-2 rounded-lg bg-neutral-800 text-neutral-100 border border-white/20" id="notas" placeholder="Notas adicionales"></textarea>
+      </div>
+
+      <div class="flex justify-between items-center">
+        <button class="bg-fuchsia-400 text-neutral-950 px-6 py-2 rounded-lg font-semibold hover:bg-fuchsia-500 transition" type="submit">
+          Guardar
+        </button>
+        <button class="bg-neutral-700 text-neutral-100 px-6 py-2 rounded-lg font-semibold hover:bg-neutral-600 transition" type="reset">
+          Limpiar
+        </button>
+      </div>
+
+    </form>
+  </main>
+</body>
+</html>

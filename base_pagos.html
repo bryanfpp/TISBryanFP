@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Base de Datos — Pagos & Facturación</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-950 text-neutral-100 p-8">
+
+  <h1 class="text-2xl font-bold mb-4">Tabla Pagos</h1>
+
+  <h2 class="text-xl font-semibold mt-4">Propósito</h2>
+  <p class="mt-2 mb-4">
+    La tabla Pagos permite registrar, controlar y dar seguimiento a todos los pagos realizados por los clientes,
+    incluyendo método de pago, subtotal, descuentos y estatus de la transacción. Facilita la gestión financiera
+    y la relación con órdenes de servicio.
+  </p>
+
+  <h2 class="text-xl font-semibold mt-4">Campos</h2>
+  <table class="table-auto border border-white/20 w-full text-left mb-8">
+    <thead>
+      <tr class="bg-neutral-900">
+        <th class="border border-white/20 px-4 py-2">Campo</th>
+        <th class="border border-white/20 px-4 py-2">Tipo de dato</th>
+        <th class="border border-white/20 px-4 py-2">Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Id_pago</td><td>VARCHAR(15) PRIMARY KEY</td><td>Identificador único (ej. PAY-2025-0001)</td></tr>
+      <tr><td>Id_orden_servicio</td><td>VARCHAR(15)</td><td>Referencia a la orden de servicio asociada</td></tr>
+      <tr><td>Id_cliente</td><td>INT</td><td>Relación con la tabla Clientes</td></tr>
+      <tr><td>fecha_pago</td><td>DATETIME</td><td>Fecha en que se realizó el pago</td></tr>
+      <tr><td>metodo_pago</td><td>NVARCHAR(20)</td><td>Efectivo, Tarjeta, Transferencia o Mixto</td></tr>
+      <tr><td>subtotal</td><td>DECIMAL(10,2)</td><td>Monto antes de descuentos</td></tr>
+      <tr><td>descuento</td><td>DECIMAL(10,2)</td><td>Monto descontado</td></tr>
+      <tr><td>total</td><td>DECIMAL(10,2)</td><td>Total a pagar (calculado)</td></tr>
+      <tr><td>estatus_pago</td><td>NVARCHAR(20)</td><td>Pendiente, Pagado o Cancelado</td></tr>
+      <tr><td>id_personal</td><td>INT</td><td>Empleado que registró o procesó el pago</td></tr>
+    </tbody>
+  </table>
+  <img src="/img/pagos.png" alt="Logo del taller" width="300" height="200">
+
+  <h2 class="text-xl font-semibold mt-4">Código SQL (MySQL)</h2>
+  <pre class="bg-neutral-900 p-4 rounded-lg overflow-x-auto text-sm">
+CREATE TABLE Pagos (
+  Id_pago VARCHAR(15) PRIMARY KEY,
+  Id_orden_servicio VARCHAR(15) NOT NULL,
+  Id_cliente INT NOT NULL,
+  fecha_pago DATETIME NOT NULL,
+  metodo_pago NVARCHAR(20),
+  subtotal DECIMAL(10,2),
+  descuento DECIMAL(10,2),
+  total DECIMAL(10,2),
+  estatus_pago NVARCHAR(20),
+  id_personal INT
+);
+  </pre>
+</body>
+</html>
