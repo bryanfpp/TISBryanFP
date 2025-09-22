@@ -12,6 +12,8 @@
   </header>
 
   <main class="max-w-4xl mx-auto p-6 space-y-6">
+
+    <!-- Objetivo -->
     <section>
       <h2 class="text-xl font-semibold">Objetivo</h2>
       <p class="mt-2 text-neutral-300">
@@ -20,6 +22,7 @@
       </p>
     </section>
 
+    <!-- Usuarios -->
     <section>
       <h2 class="text-xl font-semibold">Usuarios del subsistema</h2>
       <ul class="list-disc list-inside text-neutral-300">
@@ -29,45 +32,78 @@
       </ul>
     </section>
 
+    <!-- Requerimientos por usuario -->
     <section>
-      <h2 class="text-xl font-semibold">Acciones por usuario</h2>
+      <h2 class="text-xl font-semibold">Requerimientos por usuario</h2>
 
-      <h3 class="text-lg font-medium mt-4">Cliente</h3>
-      <ul class="list-disc list-inside text-neutral-300">
-        <li>Consultar su historial de pagos.</li>
-        <li>Recibir notificaciones de pagos pendientes o realizados.</li>
+      <!-- Cliente -->
+      <h3 class="text-lg font-medium mt-4">Requerimientos del Cliente</h3>
+      <ul class="list-disc list-inside text-neutral-300 space-y-2">
+        <li>
+          Consultar su historial de pagos.
+          <br><span class="text-fuchsia-400">Campos: ID Cliente, ID Pago, ID Orden, Monto, Fecha de Pago, Estatus</span>
+        </li>
+        <li>
+          Recibir notificaciones de pagos pendientes o realizados.
+          <br><span class="text-fuchsia-400">Campos: ID Cliente, ID Pago, Estatus, Monto, Fecha de Pago</span>
+        </li>
       </ul>
 
-      <h3 class="text-lg font-medium mt-4">Personal administrativo</h3>
-      <ul class="list-disc list-inside text-neutral-300">
-        <li>Registrar pagos.</li>
-        <li>Actualizar estatus de pago.</li>
-        <li>Generar recibos y reportes.</li>
+      <!-- Personal administrativo -->
+      <h3 class="text-lg font-medium mt-6">Requerimientos del Personal Administrativo</h3>
+      <ul class="list-disc list-inside text-neutral-300 space-y-2">
+        <li>
+          Registrar pagos.
+          <br><span class="text-fuchsia-400">Campos: ID Pago, ID Cliente, ID Orden, Monto, Método de Pago, Fecha de Pago, Estatus, Notas</span>
+        </li>
+        <li>
+          Actualizar estatus de pago.
+          <br><span class="text-fuchsia-400">Campos: ID Pago, Estatus, Fecha de Pago, Notas</span>
+        </li>
+        <li>
+          Generar recibos y reportes.
+          <br><span class="text-fuchsia-400">Campos: ID Pago, ID Cliente, ID Orden, Monto, Método de Pago, Fecha de Pago, Estatus</span>
+        </li>
       </ul>
 
-      <h3 class="text-lg font-medium mt-4">Administrador</h3>
-      <ul class="list-disc list-inside text-neutral-300">
-        <li>Registrar y borrar pagos.</li>
-        <li>Actualizar cualquier registro de pago.</li>
-        <li>Leer información completa del subsistema.</li>
+      <!-- Administrador -->
+      <h3 class="text-lg font-medium mt-6">Requerimientos del Administrador</h3>
+      <ul class="list-disc list-inside text-neutral-300 space-y-2">
+        <li>
+          Registrar y borrar pagos.
+          <br><span class="text-fuchsia-400">Campos: ID Pago, ID Cliente, ID Orden, Monto, Método de Pago, Fecha de Pago, Estatus, Notas</span>
+        </li>
+        <li>
+          Actualizar cualquier registro de pago.
+          <br><span class="text-fuchsia-400">Campos: ID Pago + cualquier otro campo editable (Cliente, Orden, Monto, Método de Pago, Estatus, Fecha, Notas)</span>
+        </li>
+        <li>
+          Leer información completa del subsistema.
+          <br><span class="text-fuchsia-400">Campos: Todos los campos (Pagos, Clientes, Órdenes, Facturación, Estatus, Fechas, Notas)</span>
+        </li>
       </ul>
     </section>
+
+    <!-- Base de datos -->
     <section>
       <h2 class="text-xl font-semibold">Diseño de la base de datos del subsistema</h2>
       <a href="basededatos/base_pagos.html" class="text-fuchsia-400 hover:underline">Base de Datos del subsistema</a>
     </section>
 
+    <!-- Formulario -->
     <section>
       <h2 class="text-xl font-semibold">Formulario</h2>
       <a href="formulario/pagos.html" class="text-fuchsia-400 hover:underline">Formulario</a>
     </section>
 
+    <!-- Responsable -->
     <section>
       <h2 class="text-xl font-semibold">Responsable del subsistema</h2>
       <ul class="list-disc list-inside text-neutral-300">
-        <li>BRYAN FUENTES PEREZ] (230110581@itsoeh.edu.mx)</li>
+        <li>BRYAN FUENTES PEREZ (230110581@itsoeh.edu.mx)</li>
       </ul>
     </section>
+
   </main>
 </body>
 </html>

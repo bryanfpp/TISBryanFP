@@ -12,6 +12,8 @@
   </header>
 
   <main class="max-w-4xl mx-auto p-6 space-y-6">
+
+    <!-- Objetivo -->
     <section>
       <h2 class="text-xl font-semibold">Objetivo</h2>
       <p class="mt-2 text-neutral-300">
@@ -20,6 +22,7 @@
       </p>
     </section>
 
+    <!-- Usuarios -->
     <section>
       <h2 class="text-xl font-semibold">Usuarios del subsistema</h2>
       <ul class="list-disc list-inside text-neutral-300">
@@ -29,44 +32,74 @@
       </ul>
     </section>
 
+    <!-- Requerimientos por usuario -->
     <section>
-      <h2 class="text-xl font-semibold">Acciones por usuario</h2>
+      <h2 class="text-xl font-semibold">Requerimientos por usuario</h2>
 
-      <h3 class="text-lg font-medium mt-4">Cliente</h3>
-      <ul class="list-disc list-inside text-neutral-300">
-        <li>Consultar historial de compras.</li>
-        <li>Recibir confirmación de ventas realizadas.</li>
+      <!-- Cliente -->
+      <h3 class="text-lg font-medium mt-4">Requerimientos del Cliente</h3>
+      <ul class="list-disc list-inside text-neutral-300 space-y-2">
+        <li>
+          Consultar historial de compras.
+          <br><span class="text-fuchsia-400">Campos: ID Cliente, ID Venta, Fecha de Venta, Total, Descripción, Estatus</span>
+        </li>
+        <li>
+          Recibir confirmación de ventas realizadas.
+          <br><span class="text-fuchsia-400">Campos: ID Cliente, ID Venta, Total, Fecha de Venta, Estatus</span>
+        </li>
       </ul>
 
-      <h3 class="text-lg font-medium mt-4">Personal administrativo</h3>
-      <ul class="list-disc list-inside text-neutral-300">
-        <li>Registrar ventas.</li>
-        <li>Actualizar información de ventas.</li>
-        <li>Generar reportes y recibos.</li>
+      <!-- Personal administrativo -->
+      <h3 class="text-lg font-medium mt-6">Requerimientos del Personal Administrativo</h3>
+      <ul class="list-disc list-inside text-neutral-300 space-y-2">
+        <li>
+          Registrar ventas.
+          <br><span class="text-fuchsia-400">Campos: ID Venta, ID Cliente, Fecha de Venta, Descripción, Total, Método de Pago, Estatus, Notas</span>
+        </li>
+        <li>
+          Actualizar información de ventas.
+          <br><span class="text-fuchsia-400">Campos: ID Venta + cualquier campo editable (Cliente, Fecha, Descripción, Total, Método de Pago, Estatus, Notas)</span>
+        </li>
+        <li>
+          Generar reportes y recibos.
+          <br><span class="text-fuchsia-400">Campos: ID Venta, ID Cliente, Fecha de Venta, Descripción, Total, Método de Pago, Estatus</span>
+        </li>
       </ul>
 
-      <h3 class="text-lg font-medium mt-4">Administrador</h3>
-      <ul class="list-disc list-inside text-neutral-300">
-        <li>Registrar, actualizar y borrar ventas.</li>
-        <li>Acceder a información completa del subsistema.</li>
+      <!-- Administrador -->
+      <h3 class="text-lg font-medium mt-6">Requerimientos del Administrador</h3>
+      <ul class="list-disc list-inside text-neutral-300 space-y-2">
+        <li>
+          Registrar, actualizar y borrar ventas.
+          <br><span class="text-fuchsia-400">Campos: ID Venta, ID Cliente, Fecha de Venta, Descripción, Total, Método de Pago, Estatus, Notas</span>
+        </li>
+        <li>
+          Acceder a información completa del subsistema.
+          <br><span class="text-fuchsia-400">Campos: Todos los campos (Ventas, Clientes, Métodos de Pago, Estatus, Fechas, Notas)</span>
+        </li>
       </ul>
     </section>
+
+    <!-- Base de datos -->
     <section>
       <h2 class="text-xl font-semibold">Diseño de la base de datos del subsistema</h2>
       <a href="basededatos/base_ventas.html" class="text-fuchsia-400 hover:underline">Base de Datos del subsistema</a>
     </section>
 
+    <!-- Formulario -->
     <section>
       <h2 class="text-xl font-semibold">Formulario</h2>
       <a href="formulario/f_ventas.html" class="text-fuchsia-400 hover:underline">Formulario</a>
     </section>
 
+    <!-- Responsable -->
     <section>
       <h2 class="text-xl font-semibold">Responsable del subsistema</h2>
       <ul class="list-disc list-inside text-neutral-300">
-        <li>BRYAN FUENTES PEREZ] (230110581@itsoeh.edu.mx)</li>
+        <li>BRYAN FUENTES PEREZ (230110581@itsoeh.edu.mx)</li>
       </ul>
     </section>
+
   </main>
 </body>
 </html>

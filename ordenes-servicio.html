@@ -32,29 +32,61 @@
     <section>
       <h2 class="text-xl font-semibold">Requerimientos por usuario</h2>
 
+      <!-- Cliente -->
       <h3 class="text-lg font-medium mt-4">Requerimientos del Cliente</h3>
-      <ul class="list-disc list-inside text-neutral-300">
-        <li>Consultar el estado de su orden de servicio.</li>
-        <li>Recibir notificaciones de cambios en el estatus.</li>
-        <li>Visualizar fecha estimada de entrega.</li>
+      <ul class="list-disc list-inside text-neutral-300 space-y-2">
+        <li>
+          Consultar el estado de su orden de servicio.  
+          <br><span class="text-fuchsia-400">Campos: ID Orden, ID Cliente.</span>
+        </li>
+        <li>
+          Recibir notificaciones de cambios en el estatus.  
+          <br><span class="text-fuchsia-400">Campos: ID Orden, Estatus, Fecha Estimada de Entrega.</span>
+        </li>
+        <li>
+          Visualizar fecha estimada de entrega.  
+          <br><span class="text-fuchsia-400">Campos: ID Orden, Fecha Estimada de Entrega, Estatus.</span>
+        </li>
       </ul>
 
-      <h3 class="text-lg font-medium mt-4">Requerimientos del Personal Técnico</h3>
-      <ul class="list-disc list-inside text-neutral-300">
-        <li>Registrar diagnósticos de equipos.</li>
-        <li>Actualizar estatus de la orden.</li>
-        <li>Registrar accesorios recibidos y estado físico inicial.</li>
+      <!-- Técnico -->
+      <h3 class="text-lg font-medium mt-6">Requerimientos del Personal Técnico</h3>
+      <ul class="list-disc list-inside text-neutral-300 space-y-2">
+        <li>
+          Registrar diagnósticos de equipos.  
+          <br><span class="text-fuchsia-400">Campos: ID Orden, ID Equipo, Estado Físico Inicial, Notas.</span>
+        </li>
+        <li>
+          Actualizar estatus de la orden.  
+          <br><span class="text-fuchsia-400">Campos: ID Orden, Estatus, Notas, Prioridad.</span>
+        </li>
+        <li>
+          Registrar accesorios recibidos y estado físico inicial.  
+          <br><span class="text-fuchsia-400">Campos: ID Orden, Accesorios Recibidos, Estado Físico Inicial, Fecha de Recepción.</span>
+        </li>
       </ul>
 
-      <h3 class="text-lg font-medium mt-4">Requerimientos del Administrador</h3>
-      <ul class="list-disc list-inside text-neutral-300">
-        <li>Registrar nuevas órdenes de servicio.</li>
-        <li>Leer información de órdenes activas e históricas.</li>
-        <li>Actualizar datos de la orden.</li>
-        <li>Borrar órdenes de servicio (*solo administrador).</li>
+      <!-- Administrador -->
+      <h3 class="text-lg font-medium mt-6">Requerimientos del Administrador</h3>
+      <ul class="list-disc list-inside text-neutral-300 space-y-2">
+        <li>
+          Registrar nuevas órdenes de servicio.  
+          <br><span class="text-fuchsia-400">Campos: ID Orden, ID Cliente, ID Equipo, Fecha de Recepción, Accesorios Recibidos, Estado Físico Inicial, Prioridad, Estatus, Fecha Estimada de Entrega, Notas.</span>
+        </li>
+        <li>
+          Leer información de órdenes activas e históricas.  
+          <br><span class="text-fuchsia-400">Campos: ID Orden, ID Cliente, ID Equipo, Estatus, Prioridad, Fechas de Recepción y Entrega, Notas.</span>
+        </li>
+        <li>
+          Actualizar datos de la orden.  
+          <br><span class="text-fuchsia-400">Campos: ID Orden + cualquier otro campo editable (Cliente, Equipo, Accesorios, Estado Físico, Prioridad, Estatus, Fecha de Entrega, Notas).</span>
+        </li>
+        <li>
+          Borrar órdenes de servicio (*solo administrador).  
+          <br><span class="text-fuchsia-400">Campos: ID Orden.</span>
+        </li>
       </ul>
     </section>
-
 
     <section>
       <h2 class="text-xl font-semibold">Diseño de la base de datos del subsistema</h2>
@@ -68,8 +100,8 @@
 
     <section>
       <h2 class="text-xl font-semibold">Responsable del subsistema</h2>
-      <ul class="list-disc list-inside text-neutral-300">s
-        <li>BRYAN FUENTES PEREZ] (230110581@itsoeh.edu.mxx)</li>
+      <ul class="list-disc list-inside text-neutral-300">
+        <li>BRYAN FUENTES PEREZ (230110581@itsoeh.edu.mx)</li>
       </ul>
     </section>
   </main>
